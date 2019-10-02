@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Detail</title>
+    </head>
+    <body>
+        <a href="{% url 'page-list' %}" >
+            <h1> {{ pages.name }}</h1>
+        </a>
+        
+	    <ul>
+	 		<li><p> {{ pages.content }} </p></li>
+	        <li><p> {{ pages.last_update }} </p></li>
+	    </ul>  
+    </body>
+</html>
